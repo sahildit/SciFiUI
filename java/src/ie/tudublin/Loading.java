@@ -30,8 +30,7 @@ public class Loading extends PApplet
         //rect(x,y,width,height);
         rect(x,y,x1,y1);
         
-        
-        if(currX<= x1)
+       if(currX<= x1)
         {
             fill(255);
             rect(x,y,currX,y1);
@@ -41,7 +40,6 @@ public class Loading extends PApplet
             fill(255);
             rect(x,y,x1,y1);
         }
-        
         
     }
 
@@ -54,8 +52,7 @@ public class Loading extends PApplet
        
         background(0);
         stroke(255);
-        noFill();
-        loadbar(increment);
+      
         
     }
     
