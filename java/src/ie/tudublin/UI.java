@@ -9,6 +9,8 @@ public class UI extends PApplet
 
     boolean[] keys = new boolean[1024];
 
+
+
     public void keyPressed()
     {
         keys[keyCode] = true;
@@ -27,7 +29,7 @@ public class UI extends PApplet
 
     public void settings()
     {
-        size(800, 800);
+        size(800, 600);
         // Use fullscreen instead of size to make your interface fullscreen
         //fullScreen(P3D); 
     }
@@ -37,12 +39,15 @@ public class UI extends PApplet
         b = new Button(this, 50, 50, 100, 50, "I am a button");
         mc = new MovingCircle(this, width / 2, height * .75f, 50);
         radar = new Radar(this, 1, width / 2, height / 2, 100);
+        
+
     }
 
     Radar radar;
 
     public void draw()
     {
+        
         background(0);
         b.render();
 
